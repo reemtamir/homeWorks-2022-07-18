@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWorks 2022-07-18</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align: center">HomeWorks 2022-07-18</h1>
+
+    <pre>
+1. create a new project
+        2. create the following inputs
+            - name
+            - age 
+            - color
+            - country
+            - gender (bonus - radio)
+        3. on submit show the user a bootstrap card 
+        with backround as set by the user with his 
+        information
+        4. clear the data after each submit
+        5. don't insert the bootstrap card if the 
+        information set by the user is not logical 
+        for example age < 0, name.length < 2
+        
+        ** with each submit insert a new card without deleting previous cards
+        
+        BONUS: 
+        read about window.alert function and show the user the errors he has done in case (section 5) or show it in some bootstrap alert </pre
+    >
+    <div class="inputs d-flex flex-column text-center w-50 m-auto">
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+      <label for="age">Age</label>
+      <input id="age" type="number" />
+
+      <label for="color">Color</label>
+      <input style="margin: auto" id="color" type="color" />
+      <label for="country">Country</label>
+      <select class="mb-4" name="country" id="country">
+        <option class="text-center" value="Israel">Israel</option>
+        <option class="text-center" value="U.S.A">U.S.A</option>
+        <option class="text-center" value="Germany">Germany</option>
+        <option class="text-center" value="Canada">Canada</option>
+      </select>
+
+      <div class="d-flex flex-column mb-3">
+        <label for="male">Male</label>
+        <input
+          class="gender"
+          type="radio"
+          id="male"
+          name="gender"
+          value="Male"
+          checked
+        />
+        <label for="female">Female</label>
+        <input
+          class="gender"
+          type="radio"
+          id="female"
+          name="gender"
+          value="Female"
+        />
+
+        <label for="non-binary">Non-Binary</label>
+        <input
+          class="gender"
+          type="radio"
+          id="non-binary"
+          name="gender"
+          value="Non-Binary"
+        />
+      </div>
+      <button
+        onclick="showCard()"
+        class="w-50 m-auto bg-warning mb-5"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </body>
+</html>
