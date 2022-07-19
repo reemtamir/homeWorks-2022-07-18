@@ -1,8 +1,9 @@
 'use strict';
-
+const container = document.querySelector('.container');
+console.log(container);
 const grid = document.createElement('div');
 grid.classList.add('row');
-document.body.appendChild(grid);
+container.appendChild(grid);
 let bgColor = document.getElementById('color');
 bgColor.value = '#FFB4B4';
 let firstGenderInput = document.getElementById('male');
