@@ -1,6 +1,5 @@
 'use strict';
 const container = document.querySelector('.container');
-console.log(container);
 const grid = document.createElement('div');
 grid.classList.add('row');
 container.appendChild(grid);
