@@ -32,8 +32,8 @@ function showCard() {
   const elCard = document.createElement('div');
   grid.appendChild(elCard);
 
-  elCard.classList.add(...['card', 'm-auto', 'w-50', 'col', 'col-6']);
-  elCard.style = 'width: 18rem';
+  elCard.classList.add(...['card', 'm-auto', 'col', 'col-4']);
+  elCard.style.height = 165 + 'px';
   elCard.innerHTML = `
       <ul class='list-group list-group-flush '>
         <li class='list-group-item card-name w-50  text-center m-auto'>${
