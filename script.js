@@ -9,8 +9,9 @@ let firstGenderInput = document.getElementById('male');
 let nameInput = document.getElementById('name');
 let ageInput = document.getElementById('age');
 let countryInput = document.getElementById('country');
-let gender = document.querySelectorAll('.gender');
+
 function showCard() {
+  let gender = document.querySelectorAll('.gender');
   for (let i = 0; i < gender.length; i++) {
     let choseGender = gender[i];
     if (choseGender.checked === true) gender = choseGender.value;
