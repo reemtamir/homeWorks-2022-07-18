@@ -18,11 +18,12 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onkeydown=" start(event)">
     <h1 style="text-align: center">HomeWorks 2022-07-18</h1>
-
-    <pre>
+    <div class="first-div p-2">
+      <pre>
 1. create a new project
         2. create the following inputs
             - name
@@ -42,8 +43,10 @@
         
         BONUS: 
         read about window.alert function and show the user the errors he has done in case (section 5) or show it in some bootstrap alert </pre
-    >
-    <div class="container" style="height: 100vh">
+      >
+    </div>
+    <h3 class="h3">To start press the Esc key🙂</h3>
+    <div class="container d-none" style="height: 100vh">
       <div class="inputs d-flex flex-column text-center w-50 m-auto">
         <label for="name">Name</label>
         <input id="name" type="text" />

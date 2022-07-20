@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(227, 211, 240);
+}
+
+.h3 {
+  text-align: center;
+  color: rgb(236, 58, 168);
+  -webkit-animation: move 9s forwards;
+          animation: move 9s forwards;
+  position: relative;
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: -1700px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: -1700px;
+  }
+  100% {
+    left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

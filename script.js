@@ -58,3 +58,11 @@ function reset() {
   countryInput.value = 'Israel';
   bgColor.value = '#FFB4B4';
 }
+function start(event) {
+  if (event.key === 'Escape') {
+    container.classList.remove('d-none');
+    document.querySelector('.first-div').classList.add('d-none');
+    document.querySelector('.h3').classList.add('d-none');
+    document.body.style.background = 'rgb(203, 243, 184)';
+  }
+}
