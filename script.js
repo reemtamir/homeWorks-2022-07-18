@@ -10,13 +10,15 @@ let nameInput = document.getElementById('name');
 let ageInput = document.getElementById('age');
 let countryInput = document.getElementById('country');
 
-function showCard() {
+function getGender() {
   let gender = document.querySelectorAll('.gender');
   for (let i = 0; i < gender.length; i++) {
     let choseGender = gender[i];
     if (choseGender.checked === true) gender = choseGender.value;
   }
-
+  return gender;
+}
+function showCard() {
   if (
     nameInput.value.length < 2 ||
     nameInput.value === '' ||
@@ -43,7 +45,7 @@ function showCard() {
         <li class='list-group-item w-75 card-country text-center m-auto'>${
           countryInput.value
         }</li>
-        <li class='list-group-item w-75 card-gender text-center m-auto'>${gender}</li>
+        <li class='list-group-item w-75 card-gender text-center m-auto'>${getGender()}</li>
       </ul>
       `;
 
